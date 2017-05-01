@@ -7,6 +7,9 @@ class Swiftenv < Formula
 
   def install
     prefix.install Dir["*"]
+    bash_completion.install "#{ prefix }/completions/swiftenv.bash"
+    zsh_completion.install "#{ prefix }/completions/swiftenv.zsh"
+    fish_completion.install "#{ prefix }/completions/swiftenv.fish"
   end
 
   def caveats; <<-EOS.undent
