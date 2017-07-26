@@ -1,8 +1,8 @@
 class Swiftenv < Formula
   desc "Swift version manager"
   homepage "https://github.com/kylef/swiftenv"
-  url "https://github.com/kylef/swiftenv/archive/1.2.1.tar.gz"
-  sha256 "9f0c491ef9f9e5948b92cc77571725230b0a2585639318a08481cfbf27cac368"
+  url "https://github.com/kylef/swiftenv/archive/1.3.0.tar.gz"
+  sha256 "6856e8f7e677ad4025525f9eebad0a0c7f1cd9a29cf59d06044f95b2b9dbc209"
   head "https://github.com/kylef/swiftenv.git"
 
   def install
