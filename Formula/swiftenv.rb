@@ -9,13 +9,14 @@ class Swiftenv < Formula
     prefix.install Dir["*"]
   end
 
-  def caveats; <<-EOS.undent
-    To use Homebrew's directories rather than ~/.swiftenv add to your profile:
-      export SWIFTENV_ROOT=#{var}/swiftenv
+  def caveats
+    <<~EOS
+      To use Homebrew's directories rather than ~/.swiftenv add to your profile:
+        export SWIFTENV_ROOT=#{var}/swiftenv
 
-    To enable shims, add the following to your profile:
-      if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
-EOS
+      To enable shims, add the following to your profile:
+        if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
+    EOS
   end
 
   test do
