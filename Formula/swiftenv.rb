@@ -9,7 +9,7 @@ class Swiftenv < Formula
     prefix.install Dir["*"]
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<~EOS
     To use Homebrew's directories rather than ~/.swiftenv add to your profile:
       export SWIFTENV_ROOT=#{var}/swiftenv
 
